@@ -28,14 +28,13 @@ function Table(props: Props) {
     //       courseDescription={props.body[i].courseDescription} />)
     //   }
     // }
-    for (var course in courses) {
-      var c = course.toString();
+    for (var i = 0; i < courses["data"].length; i++) {
       body.push(
         <tr>
-          <td>{courses[15112].courseCode}</td>
-          <td>{courses[15112].courseTitle}</td>
-          <td>{courses[15112].semesterTaken}</td>
-          <td>{courses[15112].courseDesription}</td>
+          <td>{courses["data"][i].courseCode}</td>
+          <td>{courses["data"][i].courseTitle}</td>
+          <td>{courses["data"][i].semesterTaken}</td>
+          <td>{courses["data"][i].courseDesription}</td>
         </tr>
       )
     }

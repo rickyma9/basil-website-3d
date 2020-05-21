@@ -1,14 +1,17 @@
 {
-  "15122": {
-    "courseCode": "15122",
-    "courseTitle": "Principles of Imperative Computation",
-    "semesterTaken": "Spring 2019",
-    "courseDesription": "Learned about fundamentals of imperative computation: ensuring the correctness of programs, data structures in imperative computation, and memory management in C."
-  },
-  "15112": {
-    "courseCode": "15112",
-    "courseTitle": "Fundamentals of Programming",
-    "semesterTaken": "Fall 2018",
-    "courseDesription": "A technical introduction to the fundamentals of programming with an emphasis on producing clear, robust, and reasonably efficient code using top-down design, informal analysis, and effective testing and debugging. "
-  }
+  "data" : [
+    {
+      "courseCode": "15122",
+      "courseTitle": "Principles of Imperative Computation",
+      "semesterTaken": "Spring 2019",
+      "courseDesription": "Learned about fundamentals of imperative computation: ensuring the correctness of programs, data structures in imperative computation, and memory management in C."
+    },
+    {
+      "courseCode": "15112",
+      "courseTitle": "Fundamentals of Programming",
+      "semesterTaken": "Fall 2018",
+      "courseDesription": "A technical introduction to the fundamentals of programming with an emphasis on producing clear, robust, and reasonably efficient code using top-down design, informal analysis, and effective testing and debugging. "
+    }
+  ]
+  
 }
