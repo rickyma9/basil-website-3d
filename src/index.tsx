@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Table from './Table'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} />
   </React.StrictMode>,
   document.getElementById('root')
 );
