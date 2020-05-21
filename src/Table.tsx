@@ -1,11 +1,13 @@
 import React from 'react';
 import Course from './Course'
+import Project from './Project'
 import courses from './data/courses.json'
+import projects from './data/projects.json'
 import './styles/Table.css';
 
 interface Props {
   headings: Array<String>,
-  // body: classes;
+  body: String;
 }
 
 function Table(props: Props) {
@@ -19,28 +21,29 @@ function Table(props: Props) {
 
   const createBody = () => {
     var body = [];
-    // for (var i = 0; i < props.body.length; i++) {
-    //   if (props.body.type === Course) {  // change later
-    //     body.push(<Course 
-    //       courseCode={props.body[i].courseCode} 
-    //       courseTitle={props.body[i].courseTitle}
-    //       semesterTaken={props.body[i].semesterTaken}
-    //       courseDescription={props.body[i].courseDescription} />)
-    //   }
-    // }
-    for (var i = 0; i < courses["data"].length; i++) {
-      body.push(
-        <tr>
-          <td>{courses["data"][i].courseCode}</td>
-          <td>{courses["data"][i].courseTitle}</td>
-          <td>{courses["data"][i].semesterTaken}</td>
-          <td>{courses["data"][i].courseDesription}</td>
-        </tr>
-      )
+    if (props.body === "Courses") {
+      for (var i = 0; i < courses["data"].length; i++) {
+        body.push(
+          <Course 
+            courseCode={courses["data"][i].courseCode}
+            courseTitle={courses["data"][i].courseTitle}
+            semesterTaken={courses["data"][i].semesterTaken}
+            courseDescription={courses["data"][i].courseDesription}
+          />
+        )
+      }
+    } else {
+      for (var i = 0; i < projects["data"].length; i++) {
+        body.push(
+          <Project 
+            event={projects["data"][i].event}
+            projectTitle={projects["data"][i].projectTitle}
+            projectDescription={projects["data"][i].projectDescription}
+          />
+        )
+      }
     }
     return <tbody>{body}</tbody>;
-    // console.log(courses);
-    // return <p>{courses[15112].courseName}</p>;
   }
 
   return (

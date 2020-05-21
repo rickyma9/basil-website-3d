@@ -7,7 +7,9 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} />
+    <Table headings={["Class / Event", "Project Name", "Project Description"]} body="Projects" />
+    <br />
+    <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} body="Courses" />
   </React.StrictMode>,
   document.getElementById('root')
 );
