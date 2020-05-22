@@ -1,13 +1,32 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
+
+// importing components
 import logo from './logo.svg';
 import '../styles/App.css';
 import Table from './Table'
 import Header from './Header'
 import About from './About'
 
+
 function App() {
   return (
     <div className="App">
+      {/* <Switch >
+        <Route path="/navbar">
+          <Navbar />
+        </Route>
+        <Route path="/articles">
+          <Articles />
+        </Route>
+      </Switch> */}
+
+      
       <Header />
       <div id="about">
         <h2>About me: </h2>
