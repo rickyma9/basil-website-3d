@@ -1,0 +1,46 @@
+.header a {
+  margin-right: 1em;
+}
+
+.btn a {
+  margin: auto;
+}
+
+.header nav {
+  margin-bottom: 1em;
+}
+
+.header {
+  margin-top: 5em;
+  display: flex;
+}
+
+.header h1 {
+  font-size: 4em;
+}
+
+.title {
+  flex: 30%;
+}
+
+.nav {
+  flex: 70%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+.btn {
+  width: 20%;
+  float: left;
+  background-color: #E5E4E5;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 2px;
+}
+
+.btn:hover {
+  background-color: #D2D2D2;
+}

@@ -1,0 +1,11 @@
+.row {
+  display: flex;
+}
+
+.pic {
+  flex: 30%;
+}
+
+.text {
+  flex: 70%;
+}

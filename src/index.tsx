@@ -1,15 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Table from './Table'
+import App from './components/App';
+import Table from './components/Table'
+import Header from './components/Header'
+import About from './components/About'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Table headings={["Class / Event", "Project Name", "Project Description"]} body="Projects" />
+    <Header />
+    <div id="about">
+      <h3>About me: </h3>
+      <About />
+    </div>
+    <div id="projects">
+      <h3>Projects I've worked on:</h3>
+      <Table headings={["Class / Event", "Project Name", "Project Description"]} body="Projects" />
+    </div>
     <br />
-    <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} body="Courses" />
+    <div id="courses">
+      <h3>Courses I've taken:</h3>
+      <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} body="Courses" />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

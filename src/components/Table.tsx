@@ -1,9 +1,9 @@
 import React from 'react';
 import Course from './Course'
 import Project from './Project'
-import courses from './data/courses.json'
-import projects from './data/projects.json'
-import './styles/Table.css';
+import courses from '../data/courses.json'
+import projects from '../data/projects.json'
+import '../styles/Table.css';
 
 interface Props {
   headings: Array<String>,

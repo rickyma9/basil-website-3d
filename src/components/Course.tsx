@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './styles/Course.css';
+import '../styles/Course.css';
 
 interface Props {
   courseCode: String,

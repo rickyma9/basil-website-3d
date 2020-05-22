@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './styles/Project.css';
+import '../styles/Project.css';
 
 interface Props {
   event: String,
