@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  color: black;
 }
 
 .App-logo {
@@ -35,4 +36,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#about {
+  background-color: rgba(226, 231, 237, 1);
+  padding: 15%;
+}
+
+#projects {
+  background-color: rgba(230, 229, 235, 1);
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 5%; */
+  padding: 15%;
+}
+
+#courses {
+  background-color: rgba(235, 229, 235, 1);
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%; */
+  padding: 15%;
 }
