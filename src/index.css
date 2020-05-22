@@ -5,11 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 80%;
-  margin: auto;
+  
+  background-image: url("./images/backgroundphoto.jpg");
+  /* background-size: cover; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+#root {
+  max-width: 70%;
+  padding: 5%;
+  margin: auto;
+  color: rgba(237, 237, 237, 1);
+  margin-bottom: 10%;
+}
+
+#about {
+  background-color: rgba(235, 229, 235, 1);
+  padding: 15%;
+}
+
+#projects {
+  background-color: rgba(237, 237, 237, 1);
+  /* max-width: 70%;
+  margin: auto; */
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 5%; */
+  padding: 15%;
+}
+
+#courses {
+  background-color: rgba(151, 151, 151, 1);
+  /* max-width: 70%;
+  margin: auto; */
+  /* padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%; */
+  padding: 15%;
 }

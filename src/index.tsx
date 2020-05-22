@@ -10,11 +10,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <div id="about">
-      <h3>About me: </h3>
-      <About />
-    </div>
-    <div id="projects">
+    {/* <div id="projects">
       <h3>Projects I've worked on:</h3>
       <Table headings={["Class / Event", "Project Name", "Project Description"]} body="Projects" />
     </div>
@@ -22,9 +18,33 @@ ReactDOM.render(
     <div id="courses">
       <h3>Courses I've taken:</h3>
       <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} body="Courses" />
-    </div>
+    </div> */}
   </React.StrictMode>,
   document.getElementById('root')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <h2>About me: </h2>
+    <About />
+  </React.StrictMode>,
+  document.getElementById('about')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <h2>Projects I've worked on:</h2>
+    <Table headings={["Class / Event", "Project Name", "Project Description"]} body="Projects" />
+  </React.StrictMode>,
+  document.getElementById('projects')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <h2>Courses I've taken:</h2>
+    <Table headings={["Course Code", "Course Title", "Semester Taken", "Course Description"]} body="Courses" />
+  </React.StrictMode>,
+  document.getElementById('courses')
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -1,11 +1,17 @@
+#about h2 {
+  text-align: center;
+}
+
 .row {
   display: flex;
 }
 
 .pic {
-  flex: 30%;
+  flex: 50%;
+  text-align: center;
 }
 
 .text {
-  flex: 70%;
+  flex: 50%;
+  text-align: center;
 }
