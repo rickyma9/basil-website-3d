@@ -23,19 +23,17 @@ h2 {
   max-width: 70%;
   padding: 5%;
   margin: auto;
-  color: rgba(237, 237, 237, 1);
+  color: rgba(244, 244, 244, 1);
   margin-bottom: 10%;
 }
 
 #about {
-  background-color: rgba(235, 229, 235, 1);
+  background-color: rgba(226, 231, 237, 1);
   padding: 15%;
 }
 
 #projects {
-  background-color: rgba(237, 237, 237, 1);
-  /* max-width: 70%;
-  margin: auto; */
+  background-color: rgba(230, 229, 235, 1);
   /* padding-left: 10%;
   padding-right: 10%;
   padding-top: 10%;
@@ -44,9 +42,7 @@ h2 {
 }
 
 #courses {
-  background-color: rgba(151, 151, 151, 1);
-  /* max-width: 70%;
-  margin: auto; */
+  background-color: rgba(235, 229, 235, 1);
   /* padding-left: 10%;
   padding-right: 10%;
   padding-top: 5%;
