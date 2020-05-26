@@ -7,18 +7,18 @@ import {
 
 // importing components
 import logo from './logo.svg';
-import './styles/App.css';
+import './App.css';
 import Table from './components/Table/'
-import Header from './components/Header'
+import Header from './components/Header/'
 import About from './components/About/'
-import Home from './components/Home'
+import Home from './components/Home/'
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
+      {/* <Header /> */}
         <Switch>
           <Route path="/about">
             <About />

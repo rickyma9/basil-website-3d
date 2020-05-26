@@ -1,0 +1,42 @@
+#about h2 {
+  text-align: center;
+}
+
+.rightbtn {
+  width: 10%;
+  text-align: center;
+  float: right;
+  background-color: rgb(213, 209, 231);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin: 0.5em;
+  border-radius: 20px;
+}
+
+.rightbtn:hover {
+  background-color: rgb(194, 191, 209);
+}
+
+.rightbtn a {
+  margin: auto;
+  text-decoration: none;
+}
+
+td.image {
+  width: 40%
+}
+
+td img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#homeTable {
+  padding: 0%;
+}
+
+#homeTable td{
+  padding: 5%;
+}

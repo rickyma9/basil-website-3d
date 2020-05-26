@@ -5,9 +5,19 @@ interface Props {
   event: String,
   projectTitle: String,
   projectDescription: String;
+  active: boolean;
 }
 
 function Project(props: Props) {
+  if (props.active) {
+    return (
+      <tr className="dark">
+        <td>{props.event}</td>
+        <td>{props.projectTitle}</td>
+        <td>{props.projectDescription}</td>
+      </tr>
+    );
+  }
   return (
     <tr>
       <td>{props.event}</td>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // importing styles
-import '../styles/Header.css';
+import './styles.css';
 
 function Header() {
   return (

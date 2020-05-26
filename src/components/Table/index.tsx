@@ -1,4 +1,7 @@
 import React from 'react';
+
+// importing components
+import Header from "../SimpleHeader/"
 import Course from '../Course'
 import Project from '../Project'
 import courses from '../../data/courses.json'
@@ -23,14 +26,28 @@ function Table(props: Props) {
     var body = [];
     if (props.body === "Courses") {
       for (var i = 0; i < courses["data"].length; i++) {
-        body.push(
-          <Course 
-            courseCode={courses["data"][i].courseCode}
-            courseTitle={courses["data"][i].courseTitle}
-            semesterTaken={courses["data"][i].semesterTaken}
-            courseDescription={courses["data"][i].courseDesription}
-          />
-        )
+        if (i % 2 === 0) {
+          body.push(
+            <Course 
+              courseCode={courses["data"][i].courseCode}
+              courseTitle={courses["data"][i].courseTitle}
+              semesterTaken={courses["data"][i].semesterTaken}
+              courseDescription={courses["data"][i].courseDesription}
+              active={true}
+            />
+          )
+        } else {
+          body.push(
+            <Course 
+              courseCode={courses["data"][i].courseCode}
+              courseTitle={courses["data"][i].courseTitle}
+              semesterTaken={courses["data"][i].semesterTaken}
+              courseDescription={courses["data"][i].courseDesription}
+              active={false}
+            />
+          )
+        }
+        
       }
     } else {
       for (var i = 0; i < projects["data"].length; i++) {
@@ -39,6 +56,7 @@ function Table(props: Props) {
             event={projects["data"][i].event}
             projectTitle={projects["data"][i].projectTitle}
             projectDescription={projects["data"][i].projectDescription}
+            active={true}
           />
         )
       }
@@ -47,10 +65,13 @@ function Table(props: Props) {
   }
 
   return (
+    <div className="table">
+    <Header />
     <table>
       {createHeader()}
       {createBody()}
     </table>
+    </div>
   );
 }
 

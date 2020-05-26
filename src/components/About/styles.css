@@ -18,5 +18,10 @@
 
 .about {
   background-color: rgba(226, 231, 237, 1);
-  padding: 5%;
+  /* padding: 5%; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.btn {
+  float: right;
 }
