@@ -1,4 +1,4 @@
-#about h2 {
+.about h2 {
   text-align: center;
 }
 
@@ -14,4 +14,9 @@
 .text {
   flex: 50%;
   text-align: center;
+}
+
+.about {
+  background-color: rgba(226, 231, 237, 1);
+  padding: 5%;
 }
