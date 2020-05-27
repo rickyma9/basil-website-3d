@@ -15,18 +15,18 @@ function Course(props: Props) {
   if (props.active) {
     return (
       <tr className="dark">
-        <td>{props.courseCode}</td>
-        <td>{props.courseTitle}</td>
-        <td>{props.semesterTaken}</td>
+        <td className="wider centered">{props.courseCode}</td>
+        <td className="centered">{props.courseTitle}</td>
+        <td className="centered">{props.semesterTaken}</td>
         <td>{props.courseDescription}</td>
       </tr>
     );
   }
   return (
-    <tr>
-      <td>{props.courseCode}</td>
-      <td>{props.courseTitle}</td>
-      <td>{props.semesterTaken}</td>
+    <tr className="light">
+      <td className="wider centered">{props.courseCode}</td>
+      <td className="centered">{props.courseTitle}</td>
+      <td className="centered">{props.semesterTaken}</td>
       <td>{props.courseDescription}</td>
     </tr>
   );

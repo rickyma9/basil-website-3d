@@ -14,7 +14,7 @@ function ProjectTable() {
           <td>UtiliTrend</td>
           <td>project description</td>
         </tr>
-        <tr>
+        <tr className="light">
           <td className="image"><img src={require("../../images/jeopardysearch.PNG")} /></td>
           <td>Jeopardy Search!</td>
           <td>project description</td>

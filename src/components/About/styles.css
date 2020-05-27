@@ -25,3 +25,12 @@
 .btn {
   float: right;
 }
+
+img {
+  padding: 5%;
+  max-width: 70%;
+}
+
+p {
+  padding: 5%;
+}

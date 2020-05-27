@@ -51,14 +51,25 @@ function Table(props: Props) {
       }
     } else {
       for (var i = 0; i < projects["data"].length; i++) {
-        body.push(
-          <Project 
-            event={projects["data"][i].event}
-            projectTitle={projects["data"][i].projectTitle}
-            projectDescription={projects["data"][i].projectDescription}
-            active={true}
-          />
-        )
+        if (i % 2 == 0) {
+          body.push(
+            <Project 
+              event={projects["data"][i].event}
+              projectTitle={projects["data"][i].projectTitle}
+              projectDescription={projects["data"][i].projectDescription}
+              active={true}
+            />
+          )
+        } else {
+          body.push(
+            <Project 
+              event={projects["data"][i].event}
+              projectTitle={projects["data"][i].projectTitle}
+              projectDescription={projects["data"][i].projectDescription}
+              active={false}
+            />
+          )
+        }
       }
     }
     return <tbody>{body}</tbody>;

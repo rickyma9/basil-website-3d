@@ -14,10 +14,10 @@ function About() {
         <h2>About Me</h2>
         <div className="row">
           <div className="pic">
-            <p>pic goes here</p>
+            <img src={require("../../images/ricky.PNG")} />
           </div>
           <div className="text">
-            <p>text goes here</p>
+            <p>Hi my name is Ricky</p>
           </div>
         </div>
       </div>

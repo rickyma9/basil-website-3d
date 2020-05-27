@@ -14,3 +14,15 @@ td, th {
 tr.dark {
   background-color: rgb(212, 211, 218);
 }
+
+tr.light {
+  background-color: rgb(222, 221, 230);
+}
+
+td.wider {
+  width: 9%;
+}
+
+td.centered {
+  text-align: center;
+}

@@ -12,16 +12,16 @@ function Project(props: Props) {
   if (props.active) {
     return (
       <tr className="dark">
-        <td>{props.event}</td>
-        <td>{props.projectTitle}</td>
+        <td className="centered">{props.event}</td>
+        <td className="centered wider">{props.projectTitle}</td>
         <td>{props.projectDescription}</td>
       </tr>
     );
   }
   return (
-    <tr>
-      <td>{props.event}</td>
-      <td>{props.projectTitle}</td>
+    <tr className="light">
+      <td className="centered">{props.event}</td>
+      <td className="centered wider">{props.projectTitle}</td>
       <td>{props.projectDescription}</td>
     </tr>
   );
